@@ -113,7 +113,7 @@ class LoginView(View):
     def get(self,request):
         if 'mysession' in request.COOKIES:  # 注意这边是大写
             username = request.COOKIES['mysession']
-            checked = 'onn'  # checked 只要非空就行， 然后接收数据时候就会都变成on
+            checked = 'checked'  # checked 只要非空就行， 然后接收数据时候就会都变成on
         else:
             username = ''
             checked = ''
