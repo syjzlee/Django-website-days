@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客首页</title>
+</head>
+<body>
+<h1>
+    博客首页
+    {% for key,value in context.items %}
+        <hr/>
+        文章标题：&nbsp;&nbsp;{{ key }}
+        <br/>
+        文章正文：&nbsp;&nbsp;{{ value }}
+    {% endfor %}
+</h1>
+</body>
+</html>
